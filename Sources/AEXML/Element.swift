@@ -72,7 +72,7 @@ open class AEXMLElement {
     
         - returns: An initialized `AEXMLElement` object.
     */
-    public init(name: String, value: String? = nil, isCDATA: Bool? = nil, attributes: [String : String] = [String : String]()) {
+    public init(name: String, value: String? = nil, attributes: [String : String] = [String : String](), isCDATA: Bool? = nil ) {
         self.name = name
         self.value = value
         self.isCDATA = value != nil ? (isCDATA ?? false) : nil
