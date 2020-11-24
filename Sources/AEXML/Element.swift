@@ -236,7 +236,7 @@ open class AEXMLElement {
                                           isCDATA: Bool? = nil,
                                           attributes: [String : String] = [String : String]()) -> AEXMLElement
     {
-        let child = AEXMLElement(name: name, value: value, isCDATA: isCDATA, attributes: attributes)
+        let child = AEXMLElement(name: name, value: value, attributes: attributes, isCDATA: isCDATA)
         return addChild(child)
     }
     
